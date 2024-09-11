@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sergii Lebid's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <div class="intro-text">
+        <h2>Hi, I'm Sergii.</h2>
+        <h2>I appreciate your visit.</h2>
+        <h2>Welcome to my Portfolio!</h2>
+    </div>
+</section>
+
+<section id="about" class="about">
+    <img src="profile.jpg" alt="Sergii Lebid">
+    <div>
+        <h2>About Me</h2>
+        <p>I am Sergii Lebid, an IT specialist based in Ottawa, Canada. I recently graduated from Algonquin College, where I completed the Web Development and Internet Applications program. Over the last year as a student, I took on freelance projects to enhance my skills and gain real-world experience. I have a strong passion for both frontend and backend development, as well as database management. My major skills include HTML/CSS, PHP, C#, JavaScript, and Python, with additional expertise in various other technologies outlined in my skills section. I am open to both on-site and remote work opportunities, and I prefer to be contacted via email at greenapple8643@gmail.com.</p>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="centered-heading">Projects</h2>
+    <div class="projects">
+        <div class="project-card">
+            <img src="CoffeeStore_Page1.jpg" alt="Project 1" class="project-image" onclick="openLightbox('project1')">
+            <p>Description: Responsive website for a coffee store (Frontend). Technologies: HTML, CSS, Javascript.</p>
+            <button onclick="window.open('https://github.com/Greenapple8643/Responsive_website.git')">GitHub Link</button>
+    
+        </div>
+        <div class="project-card">
+            <img src="images/project2/img1.jpg" alt="Project 2" class="project-image" onclick="openLightbox('project2')">
+            <button onclick="window.open('https://github.com/Greenapple8643/ice_project.git')">GitHub Link</button>
+            <p>Description: Hockey Association Website (Backend: PHP, Laravel, Filament, MySQL, HTML)</p>
+        </div>
+        <div class="project-card">
+            <img src="images/project3/img1.jpg" alt="Project 3" class="project-image" onclick="openLightbox('project3')">
+            <button onclick="window.open('https://github.com/Greenapple8643/SVG_animation.git')">GitHub Link</button>
+            <p></p>
+        </div>
+        <div class="project-card">
+            <img src="images/project4/img1.jpg" alt="Project 4" class="project-image" onclick="openLightbox('project4')">
+            <button onclick="window.open('https://github.com/Greenapple8643/Social_Media_Website.git')">GitHub Link</button>
+        </div>
+        <div class="project-card">
+            <img src="images/project5/img1.jpg" alt="Project 5" class="project-image" onclick="openLightbox('project5')">
+            <button onclick="window.open('https://github.com/Greenapple8643/StudentRecord.git')">GitHub Link</button>
+        </div>
+        <div class="project-card">
+            <img src="images/project6/img1.jpg" alt="Project 6" class="project-image" onclick="openLightbox('project6')">
+            <button onclick="window.open('https://github.com/Greenapple8643/video_gallery.git')">GitHub Link</button>
+        </div>
+    </div>
+
+    <div id="lightbox-project1" class="lightbox">
+        <div id="carousel-project1" class="carousel slide" data-ride="carousel">
+           
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-project1" data-slide-to="0"></li>
+                <li data-target="#carousel-project1" data-slide-to="1"></li>
+                <li data-target="#carousel-project1" data-slide-to="2"></li>
+                <li data-target="#carousel-project1" data-slide-to="3"></li>
+                <li data-target="#carousel-project1" data-slide-to="4"></li>
+                <li data-target="#carousel-project1" data-slide-to="5"></li>
+                <li data-target="#carousel-project1" data-slide-to="6"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="item">
+                    <img src="CoffeeStore_Page1.jpg" alt="Image 1">
+                </div>
+                <div class="item">
+                    <img src="CoffeeStore_Page2.jpg" alt="Image 2">
+                </div>
+                <div class="item">
+                    <img src="CoffeeStore_Page3.jpg" alt="Image 3">
+                </div>
+                <div class="item active">
+                    <img src="CoffeeStore_Page4.jpg" alt="Image 4">
+                </div>
+                <div class="item">
+                    <img src="CoffeeStore_Page5.jpg" alt="Image 5">
+                </div>
+                <div class="item">
+                    <img src="CoffeeStore_Page6.jpg" alt="Image 6">
+                </div>
+                <div class="item">
+                    <img src="CoffeeStore_Page7.jpg" alt="Image 7">
+                </div>
+            </div>
+
+            <a class="left carousel-control" href="#carousel-project1" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-project1" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <span class="close" onclick="closeLightbox('project1')">&times;</span>
+    </div>
+
+    <!-- Repeat the carousel setup for other projects -->
+</section>
+
+<section id="skills">
+    <h2 class="centered-heading">Skills</h2>
+    <div class="skills">
+        <div class="skill">
+            <h3>HTML & CSS</h3>
+        </div>
+        <div class="skill">
+            <h3>JavaScript</h3>
+        </div>
+        <div class="skill">
+            <h3>SQL (MySQL & MariaDB)</h3>
+        </div>
+        <div class="skill">
+            <h3>PHP</h3>
+        </div>
+        <div class="skill">
+            <h3>C#</h3>
+        </div>
+        <div class="skill">
+            <h3>Python</h3>
+        </div>
+        <div class="skill">
+            <h3>React</h3>
+        </div>
+        <div class="skill">
+            <h3>Laravel</h3>
+        </div>
+        <div class="skill">
+            <h3>ASP.NET</h3>
+        </div>
+        <div class="skill">
+            <h3>Git & GitHub</h3>
+        </div>
+        <div class="skill">
+            <h3>API Development</h3>
+        </div>
+        <div class="skill">
+            <h3>Bootstrap</h3>
+        </div>
+        <div class="skill">
+            <h3>Ubuntu</h3>
+        </div>
+        <div class="skill">
+            <h3>Figma</h3>
+        </div>
+        <div class="skill">
+            <h3>Web Security</h3>
+        </div>
+        <div class="skill">
+            <h3>RESTful Services</h3>
+        </div>
+        <div class="skill">
+            <h3>JSON</h3>
+        </div>
+        <div class="skill">
+            <h3>Linux</h3>
+        </div>
+        <div class="skill">
+            <h3>Adobe Illustrator</h3>
+        </div>
+        <div class="skill">
+            <h3>Adobe Photoshop</h3>
+        </div>
+        <div class="skill">
+            <h3>Ajax</h3>
+        </div>
+        <div class="skill">
+            <h3>jQuery</h3>
+        </div>
+        <div class="skill">
+            <h3>Docker, DNS, FTP, HTTP/HTTPS services, TCP, Firewall</h3>
+        </div>
+        <div class="skill">
+            <h3>XML</h3>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="centered-heading">Contact</h2>
+    <div class="contact-container">
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.8600315962244!2d-75.92447088816857!3d45.3516376408214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cd1ff9715ba59fb%3A0x7bc6ed4f5b0abc44!2s77%20Banchory%20Crescent%2C%20Ottawa%2C%20ON%20K2K%202V3!5e0!3m2!1sen!2sca!4v1725842238497!5m2!1sen!2sca"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <form class="contact-form" action="mailto:greenapple8643@gmail.com">
+            <h3>Get in Touch</h3>
+            <div class="inputBox">
+                <span class="fas fa-user"></span>
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-envelope"></span>
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="inputBox">
+                <span class="fas fa-phone"></span>
+                <input type="number" placeholder="Number">
+            </div>
+            <input type="submit" value="Contact Now" class="btn">
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; August 2024 Sergii Lebid. All rights reserved.</p>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>
+
+
