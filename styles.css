@@ -409,18 +409,9 @@ footer {
 }
 
 /* Apply scroll margin to sections */
-#about, #projects, #skills {
+#about, #projects, #skills, #contact {
     scroll-margin-top: 80px; /* Adjust this value to match your header height */
 }
-
-#contact {
-    scroll-margin-top: 30px;
-}
-
-
-
-
-
 
 
 
