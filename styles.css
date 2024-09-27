@@ -5,6 +5,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.hamburger{
+    display: none;
+}
+
 body {
     background-color: #f4f4f4;
     color: #333;
@@ -13,26 +17,38 @@ body {
     overflow-x: hidden;
 }
 
+
+
 header {
-    background-color: #282c34;
-    padding: 1rem 2rem;
-    display: flex !important;
-    justify-content: space-between !important; /* This will move all children to the right */
+    display: flex;
+    justify-content: space-between; /* Ensures space between hamburger and nav */
     align-items: center;
-    color: white;
+    padding: 1rem 2rem;
+    background-color: #282c34;
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
     width: 100%;
-    height: 70px;
+    z-index: 1000;
+    height: 65px;
 }
 
 nav {
-    display: flex !important; /* Ensures the links are displayed in a row */
-    margin-left: auto !important; /* Ensures the nav is pushed to the right */
-    margin-right: 100 px;
+    display: flex !important; /* Navbar visible and stable */
+    flex-direction: row; /* Ensure it's in a row format */
+    position: relative; /* Ensure the nav doesn't move */
+    top: 0;
+    left: auto;
+    right: auto;
+    width: auto; /* Avoid full-width nav bar on larger screens */
+    background: none; /* Transparent background */
+    max-height: none; /* No height restrictions */
+    justify-content: flex-end; /* Align items to the right */
+}
+
+
+.nav-active {
+    display: flex !important; /* Ensure the dropdown works on larger screens */
+    max-height: none; /* No height restrictions */
 }
 
 nav a {
@@ -114,6 +130,7 @@ section {
     border-radius: 50%;
     margin-right: 2rem;
 }
+
 
 .about p {
     max-width: 90%;
@@ -221,8 +238,6 @@ section {
     object-fit: fill;
 }
 
-
-
 .close {
     position: absolute;
     top: 20px; /* Positioning the close button within the lightbox */
@@ -320,8 +335,6 @@ section {
     border-radius: 5px;
 }
 
-
-
 .contact-form .btn {
     display: block; /* Make the button a block element to use margin for centering */
     margin: 0 auto; /* Center the button horizontally */
@@ -408,10 +421,161 @@ footer {
     color: #333;
 }
 
-/* Apply scroll margin to sections */
 #about, #projects, #skills, #contact {
-    scroll-margin-top: 80px; /* Adjust this value to match your header height */
+    scroll-margin-top: 80px; 
 }
+
+
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 1rem;
+        justify-content: space-between;
+        height: 8rem;
+    }
+
+    nav {
+        display: none; /* Hide navigation links for mobile */
+        flex-direction: column; /* Stack menu items vertically */
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #282c34;
+        max-height: 0; /* Hide by default */
+        overflow: hidden;
+        width: auto; /* Dropdown adjusts to content */
+        padding: 0.5rem; /* Minimal padding */
+        transition: max-height 0.3s ease-out;
+    }
+
+    .nav-active {
+        display: flex;
+        max-height: 400px;
+        width: auto; /* Dropdown with minimal width */
+    }
+
+    nav a {
+        white-space: nowrap; /* Prevent line breaks */
+        padding: 0.5rem;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        font-size: 3rem;
+        margin: 1rem;
+        color: white;
+    }
+
+    /* Adjust main hero section to cover full screen */
+    .hero {
+        height: 100vh; /* Full viewport height for the home section */
+        background: url('main2.jpg') no-repeat center center/cover;
+        padding: 5rem 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .intro-text h2 {
+        font-size: 2.2rem; /* Smaller text size */
+    }
+
+    /* Adjust About section */
+    .about {
+        flex-direction: column;
+        margin: 3rem 1rem;
+        text-align: center;
+    }
+
+    #about {
+        padding-top: 2rem;
+        margin-top: 100px; /* Ensure the About section starts lower */
+    }
+
+    .about img {
+        width: 100%; /* Full-width on mobile */
+        height: auto;
+        border-radius: 50%; /* Remove the round border radius on mobile */
+    }
+
+    .about p {
+        font-size: 1.6rem;
+    }
+
+    /* Projects section adjustments */
+    .projects {
+        grid-template-columns: 1fr; /* Stack project cards vertically */
+        margin: 3rem 1rem;
+    }
+
+    /* Skills section adjustments */
+    .skills {
+        grid-template-columns: repeat(2, 1fr); /* 2-column layout */
+        gap: 1rem;
+        margin: 2rem 1rem;
+    }
+
+    .skill h3 {
+        font-size: 1.2rem;
+    }
+
+    /* Contact form adjustments */
+    .contact-container {
+        flex-direction: column;
+        margin: 2rem 1rem;
+        height: auto;
+    }
+
+    .map, .contact-form {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Footer adjustments */
+    footer {
+        padding: 1rem;
+        font-size: 1.8rem;
+    }
+
+
+    .lightbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw; /* Full width of the viewport */
+        height: 100vh; /* Full height of the viewport */
+        background-color: rgba(0, 0, 0, 0.8); /* Background to darken the screen */
+        z-index: 9999; /* Ensure it's above other content */
+        overflow: hidden; /* Prevent overflowing content */
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .lightbox img {
+        max-width: 90%; /* Ensure image fits within the screen */
+        max-height: 90%; /* Prevent the image from overflowing vertically */
+        object-fit: contain; /* Ensure the image scales properly */
+    }
+
+    .close {
+        position: absolute;
+        top: 1rem; /* Position it at the top */
+        right: 1rem; /* Position it on the right */
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+        z-index: 10000; /* Make sure it stays above everything */
+    }
+    
+
+}
+
 
 
 

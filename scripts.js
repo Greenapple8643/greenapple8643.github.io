@@ -60,6 +60,17 @@ document.querySelectorAll('.lightbox').forEach(lightbox => {
     makeDraggable(lightbox);
 });
 
+// Toggle hamburger menu
+const hamburger = document.querySelector('.hamburger');
+const nav = document.querySelector('nav');
+
+hamburger.addEventListener('click', () => {
+    nav.classList.toggle('nav-active');
+});
+
+
+
+
 
 
 
