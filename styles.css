@@ -543,7 +543,7 @@ footer {
 
 
     .lightbox {
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: center;
         position: fixed;
@@ -556,6 +556,8 @@ footer {
         overflow: hidden; /* Prevent overflowing content */
         transition: opacity 0.3s ease-in-out;
     }
+
+    
 
     .lightbox img {
         max-width: 90%; /* Ensure image fits within the screen */
