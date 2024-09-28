@@ -76,6 +76,14 @@ nav a:hover {
     position: relative; /* Adjusts positioning relative to the header */
 }
 
+#apple-image {
+    position: absolute;
+    top: 5px; /* Adjust this value based on your header height */
+    left: 20px; /* Align it to the left side */
+    width: 50px; /* Adjust the size based on your preference */
+    z-index: 10; /* Ensure it's above the header background */
+}
+
 .intro-text {
     display: flex;
     flex-direction: column;
@@ -435,6 +443,7 @@ footer {
         height: 8rem;
     }
 
+
     nav {
         display: none; /* Hide navigation links for mobile */
         flex-direction: column; /* Stack menu items vertically */
@@ -478,6 +487,14 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    #apple-image {
+        position: absolute;
+        top: 10px;
+        right: 10px; /* Move to the right for mobile screens */
+        left: auto; /* Disable left positioning */
+        width: 50px; /* Resize for mobile */
     }
 
     .intro-text h2 {
