@@ -17,14 +17,12 @@ body {
     overflow-x: hidden;
 }
 
-
-
 header {
     display: flex;
     justify-content: space-between; /* Ensures space between hamburger and nav */
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #282c34;
+    background-color: #333;
     position: fixed;
     top: 0;
     width: 100%;
@@ -36,7 +34,7 @@ nav {
     display: flex !important; /* Navbar visible and stable */
     flex-direction: row; /* Ensure it's in a row format */
     position: relative; /* Ensure the nav doesn't move */
-    top: 0;
+    top: 0.5rem;
     left: auto;
     right: auto;
     width: auto; /* Avoid full-width nav bar on larger screens */
@@ -94,7 +92,7 @@ nav a:hover {
 
 .intro-text h2 {
     font-size: 3.5rem;
-    color: #282c34;
+    color: #333;
     margin-bottom: 0.5rem;
 }
 
@@ -368,7 +366,7 @@ section {
 
 
 footer {
-    background-color: #282c34;
+    background-color: #333;
     color: white;
     text-align: center;
     padding: 2rem 0;
@@ -450,7 +448,7 @@ footer {
         position: absolute;
         top: 70px;
         left: 0;
-        background-color: #282c34;
+        background-color: #333;
         max-height: 0; /* Hide by default */
         overflow: hidden;
         width: auto; /* Dropdown adjusts to content */
@@ -481,7 +479,7 @@ footer {
     /* Adjust main hero section to cover full screen */
     .hero {
         height: 100vh; /* Full viewport height for the home section */
-        background: url('main2.jpg') no-repeat center center/cover;
+        background: url('main3.jpg') no-repeat center center/cover;
         padding: 5rem 1rem;
         display: flex;
         flex-direction: column;
@@ -491,14 +489,21 @@ footer {
 
     #apple-image {
         position: absolute;
-        top: 10px;
+        top: 15px;
         right: 10px; /* Move to the right for mobile screens */
         left: auto; /* Disable left positioning */
         width: 50px; /* Resize for mobile */
     }
 
+    .intro-text {
+        padding-top: 35rem; /* Adjust this value to push the text down */
+        padding-right: 5rem;
+    }
+
     .intro-text h2 {
-        font-size: 2.2rem; /* Smaller text size */
+        font-size: 1.8rem; /* Smaller text size for mobile */
+        color: #333;
+        margin: 0.5rem;
     }
 
     /* Adjust About section */
@@ -560,7 +565,7 @@ footer {
     /* Footer adjustments */
     footer {
         padding: 1rem;
-        font-size: 1.2rem;
+        font-size: 1.8rem;
     }
 
 
@@ -596,7 +601,6 @@ footer {
         cursor: pointer;
         z-index: 10000; /* Make sure it stays above everything */
     }
-    
 
 }
 
