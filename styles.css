@@ -458,6 +458,7 @@ footer {
     nav a {
         white-space: nowrap; /* Prevent line breaks */
         padding: 0.5rem;
+        font-size: 2rem;
     }
 
     .hamburger {
@@ -491,18 +492,22 @@ footer {
     }
 
     #about {
-        padding-top: 2rem;
+        padding-top: 1rem;
         margin-top: 100px; /* Ensure the About section starts lower */
     }
 
     .about img {
-        width: 100%; /* Full-width on mobile */
+        width: 70%; /* Full-width on mobile */
         height: auto;
         border-radius: 50%; /* Remove the round border radius on mobile */
     }
 
     .about p {
         font-size: 1.6rem;
+    }
+
+    .about h2 {
+        text-align: center;
     }
 
     /* Projects section adjustments */
@@ -538,7 +543,7 @@ footer {
     /* Footer adjustments */
     footer {
         padding: 1rem;
-        font-size: 1.8rem;
+        font-size: 1.2rem;
     }
 
 
