@@ -70,7 +70,7 @@ nav a:hover {
     height: 100vh;
     padding: 0; /* Remove any padding that pushes content down */
     margin-top: -0.7rem; /* Remove any margin that causes extra space */
-    background: url('main2.jpg') no-repeat center center/cover;
+    background: url('Jaguar.jpg') no-repeat center center/cover;
     position: relative; /* Adjusts positioning relative to the header */
 }
 
@@ -94,6 +94,13 @@ nav a:hover {
     font-size: 3.5rem;
     color: #333;
     margin-bottom: 0.5rem;
+    display: table; /* keep the background color wrapped tight */
+    padding:5px;
+    color: white;
+    border-radius: 15px;
+    background-color: rgba(51, 51, 51, 0.5);
+    /*background-color: rgba(186, 216, 86, 0.3);*/
+    box-shadow: 5px 5px 8px rgba(53, 53, 53, 0.5);
 }
 
 section {
@@ -431,8 +438,6 @@ footer {
     scroll-margin-top: 80px; 
 }
 
-
-
 @media (max-width: 768px) {
 
     header {
@@ -440,7 +445,6 @@ footer {
         justify-content: space-between;
         height: 8rem;
     }
-
 
     nav {
         display: none; /* Hide navigation links for mobile */
@@ -479,7 +483,7 @@ footer {
     /* Adjust main hero section to cover full screen */
     .hero {
         height: 100vh; /* Full viewport height for the home section */
-        background: url('main3.jpg') no-repeat center center/cover;
+        background: url('Jaguar.jpg') no-repeat center center/cover;
         padding: 5rem 1rem;
         display: flex;
         flex-direction: column;
@@ -496,13 +500,13 @@ footer {
     }
 
     .intro-text {
-        padding-top: 35rem; /* Adjust this value to push the text down */
+        padding-top: 20rem; /* Adjust this value to push the text down */
         padding-right: 5rem;
     }
 
     .intro-text h2 {
         font-size: 1.8rem; /* Smaller text size for mobile */
-        color: #333;
+        color: white;
         margin: 0.5rem;
     }
 
