@@ -420,6 +420,7 @@ footer {
     margin: 0 6rem;
     margin-bottom: 6rem;
     grid-template-columns: repeat(6, 1fr);
+    position: relative;
 }
 
 .skill {
@@ -461,6 +462,25 @@ footer {
     transform: scale(1.2);
     color: #333;
 }
+
+.skill:hover::after {
+    content: attr(data-comment); /* Retrieves the comment from the data-comment attribute */
+    position: absolute;
+    top: -40px; /* Adjust positioning above the skill */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #bad856;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    z-index: 10;
+    font-size: 1rem;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    font-size: 12px;
+}
+
 
 #about, #projects, #skills, #contact {
     scroll-margin-top: 80px; 

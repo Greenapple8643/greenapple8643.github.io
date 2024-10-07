@@ -68,6 +68,24 @@ hamburger.addEventListener('click', () => {
     nav.classList.toggle('nav-active');
 });
 
+document.querySelectorAll('.skill').forEach(skill => {
+    skill.addEventListener('mouseenter', function() {
+        const comment = skill.getAttribute('data-comment');
+        const tooltip = document.createElement('div');
+        tooltip.classList.add('tooltip');
+        tooltip.innerText = comment;
+        skill.appendChild(tooltip);
+    });
+
+    skill.addEventListener('mouseleave', function() {
+        const tooltip = skill.querySelector('.tooltip');
+        if (tooltip) {
+            tooltip.remove();
+        }
+    });
+});
+
+
 
 
 
