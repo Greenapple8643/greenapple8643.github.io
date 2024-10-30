@@ -548,7 +548,7 @@ footer {
     }
 
     .intro-text {
-        padding-top: 20rem; /* Adjust this value to push the text down */
+        padding-top: 15rem; /* Adjust this value to push the text down */
         padding-right: 5rem;
     }
 
@@ -635,8 +635,6 @@ footer {
         overflow: hidden; /* Prevent overflowing content */
         transition: opacity 0.3s ease-in-out;
     }
-
-    
 
     .lightbox img {
         max-width: 90%; /* Ensure image fits within the screen */
