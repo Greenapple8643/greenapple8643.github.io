@@ -86,49 +86,50 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start; /* Align items to the left */
     height: 100%;
-    padding-left: 10%;
+    padding-left: 5%; /* Add padding to create space from the left edge */
+    text-align: left; /* Ensure the text inside is left-aligned */
 }
 
 .intro-text h2 {
     font-size: 3.5rem;
     color: white;
     opacity: 0; /* Initially hidden */
-    transform: translateX(100%); /* Start off-screen on the right */
+    transform: none; /* Remove the transform effect */
     display: table;
-    padding: 5px;
+    padding: 10px;
     background-color: rgba(186, 216, 86, 0.3);
     border-radius: 15px;
     box-shadow: 5px 5px 8px rgba(53, 53, 53, 0.5);
+    text-align: left; /* Ensure text within each h2 is left-aligned */
 }
 
-@keyframes slideInFromRight {
+
+
+
+@keyframes fadeIn {
     0% {
-        transform: translateX(100%); /* Start off-screen */
-        opacity: 0; /* Fully hidden */
+        opacity: 0;
     }
     100% {
-        transform: translateX(0); /* End at original position */
-        opacity: 1; /* Fully visible */
+        opacity: 1;
     }
 }
 
 .line-1 {
-    animation: slideInFromRight 1s ease-out forwards;
+    animation: fadeIn 1s ease-out forwards;
     animation-delay: 0.5s; /* Delay for the first line */
-    margin-left: 0; /* No shift for the first line */
 }
 
 .line-2 {
-    animation: slideInFromRight 1s ease-out forwards;
+    animation: fadeIn 1s ease-out forwards;
     animation-delay: 1.5s; /* Delay for the second line */
-    margin-left: 50px; /* Shift by 10px from the first line */
 }
 
 .line-3 {
-    animation: slideInFromRight 1s ease-out forwards;
+    animation: fadeIn 1s ease-out forwards;
     animation-delay: 2.5s; /* Delay for the third line */
-    margin-left: 100px; /* Shift by 20px from the first line */
 }
 
 section {
