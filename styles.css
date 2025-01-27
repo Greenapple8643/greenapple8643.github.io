@@ -92,7 +92,7 @@ nav a:hover {
     text-align: left; /* Ensure the text inside is left-aligned */
 }
 
-.intro-text h2 {
+.intro-text h1 {
     font-size: 3.5rem;
     color: white;
     opacity: 0; /* Initially hidden */
@@ -404,9 +404,18 @@ footer {
     font-size: 12px;
 }
 
-
 #about, #projects, #skills, #contact {
     scroll-margin-top: 80px; 
+}
+
+.form-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 1200px; /* Restrict the maximum width */
+    margin: 0 auto;
 }
 
 @media (max-width: 768px) {
@@ -475,7 +484,7 @@ footer {
         padding-right: 5rem;
     }
 
-    .intro-text h2 {
+    .intro-text h1 {
         font-size: 1.8rem; /* Smaller text size for mobile */
         color: white;
         margin: 0.5rem;

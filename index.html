@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green Apple Web Studio</title>
+    <title>Canada Web Design Services</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -11,11 +11,11 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="shortcut icon" href="favicon.ico">
 
-    <meta property="og:title" content="This is Serge's Portfolio">
-    <meta property="og:description" content="Dynamic portfolio showcasing expertise in web development and design.">
+    <meta property="og:title" content="Canada Web Design Services">
+    <meta property="og:description" content="Affordable Web Design and Development Services in Canada – Custom Websites and E-commerce Solutions">
     <meta property="og:image" content="favicon.ico">
     <meta property="og:image" content="https://www.greenapplewebsite.com/Jaguar.jpg">
-    <meta property="og:url" content="https://www.greenapplewebsite.com">
+    <meta property="og:url" content="https://www.greenapplewebstudio.com">
     <meta property="og:type" content="website">
 </head>
 <body>
@@ -24,7 +24,7 @@
     <div class="hamburger">
         <i class="fas fa-bars"></i>
     </div>
-    <img src="apple.png" id="apple-image" alt="Apple Logo">
+    <img src="apple1.png" id="apple-image" alt="Apple Logo">
     
     <nav>
         <a href="#home">Home</a>
@@ -38,9 +38,9 @@
 <section id="home" class="hero">
     <div class="fog"></div>
     <div class="intro-text">
-        <h2 class="line line-1">Green Apple Web Studio</h2>
-        <h2 class="line line-2">Your Partner in Stunning Custom Websites</h2>
-        <h2 class="line line-3">Design | Development | SEO | Maintenance | Data</h2>
+        <h1 class="line line-1">Green Apple Web Studio</h1>
+        <h1 class="line line-2">Your Partner in Stunning Custom Websites</h1>
+        <h1 class="line line-3">Design | Development | SEO | Maintenance | Data</h1>
     </div>
 </section>
 
@@ -603,7 +603,7 @@
             <h3>Ajax</h3>
         </div>
         <div class="skill" data-comment="May 2023">
-            <h3>jQuery</h3>
+            <h3>Azure</h3>
         </div>
         <div class="skill" data-comment="August 2023">
             <h3>DevOps & Networking Technologies</h3>
@@ -626,51 +626,69 @@
         <div class="skill" data-comment="June 2024">
             <h3>Power BI</h3>
         </div>
+        <div class="skill" data-comment="June 2010">
+            <h3>Microsoft 365</h3>
+        </div>
     </div>
 </section>
-
 <section id="contact" class="py-5">
-    <main class="d-flex flex-column justify-content-center align-items-start" style="margin: 40px;">
+    <main class="d-flex flex-column justify-content-center align-items-center">
         <div class="container mt-3">
             <div class="form-container">
                 <h3 class="text-start" style="color: #333;">Contact Us Form</h3>
                 <p class="text-danger">Please fill out all required fields marked with an asterisk (*).</p>
                 <form action="https://formspree.io/f/mnnnojwk" method="POST">
-
+            
                     <!-- First Row -->
                     <div class="row mb-3">
                         <div class="col-md-3">
-                            <label for="name" class="form-label" style="color: #333;">Name *</label>
-                            <input type="text" class="form-control" id="name" name="Name" required>
+                            <label for="first-name" class="form-label" style="color: #333;">First Name *</label>
+                            <input type="text" class="form-control" id="first-name" name="First_Name" required>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="second-name" class="form-label" style="color: #333;">Second Name *</label>
+                            <input type="text" class="form-control" id="second-name" name="Second_Name" required>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="company" class="form-label" style="color: #333;">Company</label>
+                            <input type="text" class="form-control" id="company" name="Company">
                         </div>
                         <div class="col-md-3">
                             <label for="city" class="form-label" style="color: #333;">City *</label>
                             <input type="text" class="form-control" id="city" name="City" required>
                         </div>
+                    </div>
+            
+                    <!-- Second Row -->
+                    <div class="row mb-3">
                         <div class="col-md-3">
                             <label for="country" class="form-label" style="color: #333;">Country *</label>
                             <input type="text" class="form-control" id="country" name="Country" required>
                         </div>
                         <div class="col-md-3">
+                            <label for="phone" class="form-label" style="color: #333;">Phone *</label>
+                            <input type="tel" class="form-control" id="phone" name="Phone" required>
+                        </div>
+                        <div class="col-md-3">
                             <label for="email" class="form-label" style="color: #333;">Email *</label>
                             <input type="email" class="form-control" id="email" name="Email" required>
                         </div>
-                    </div>
-
-                    <!-- Second Row -->
-                    <div class="row mb-3">
-                        <div class="col-md-6">
-                            <label for="description" class="form-label" style="color: #333;">Website Description *</label>
-                            <textarea class="form-control" id="description" name="Website_Description" rows="3" required></textarea>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="phone" class="form-label" style="color: #333;">Phone Number *</label>
-                            <input type="tel" class="form-control" id="phone" name="Phone" required>
+                        <div class="col-md-3">
+                            <label for="existing-url" class="form-label" style="color: #333;">Existing Website URL</label>
+                            <input type="url" class="form-control" id="existing-url" name="Existing_Website">
                         </div>
                     </div>
-
+            
                     <!-- Third Row -->
                     <div class="row mb-3">
+                        <div class="col-md-4">
+                            <label for="start" class="form-label" style="color: #333;">When would you like to start? *</label>
+                            <input type="date" class="form-control" id="start" name="Start_Date" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="complete-date" class="form-label" style="color: #333;">Preferred Date to Complete *</label>
+                            <input type="date" class="form-control" id="complete-date" name="Preferred_Complete_Date" required>
+                        </div>
                         <div class="col-md-4">
                             <label for="messenger" class="form-label" style="color: #333;">Preferred Messenger *</label>
                             <select class="form-select" id="messenger" name="Messenger" required>
@@ -682,43 +700,32 @@
                                 <option value="Other">Other</option>
                             </select>
                         </div>
-                        <div class="col-md-4">
-                            <label for="time" class="form-label" style="color: #333;">Preferred Time to Complete *</label>
-                            <input type="text" class="form-control" id="time" name="Preferred_Time" required>
-                        </div>
-                        <div class="col-md-4">
-                            <label for="budget" class="form-label" style="color: #333;">Budget *</label>
+                    </div>
+            
+                    <!-- Fourth Row -->
+                    <div class="row mb-3">
+                        <div class="col-12">
+                            <label for="budget" class="form-label" style="color: #333;">What is your budget? *</label>
                             <input type="text" class="form-control" id="budget" name="Budget" required>
                         </div>
                     </div>
-
-                    <!-- Fourth Row -->
-                    <div class="row mb-3">
-                        <div class="col-md-6">
-                            <label for="existing-url" class="form-label" style="color: #333;">Existing Website URL</label>
-                            <input type="url" class="form-control" id="existing-url" name="Existing_Website">
-                        </div>
-                        <div class="col-md-6">
-                            <label for="liked-websites" class="form-label" style="color: #333;">Websites You Like</label>
-                            <textarea class="form-control" id="liked-websites" name="Liked_Websites" rows="2"></textarea>
-                        </div>
-                    </div>
-
+            
                     <!-- Fifth Row -->
                     <div class="row mb-3">
                         <div class="col-12">
-                            <label for="comments" class="form-label" style="color: #333;">Additional Comments</label>
-                            <textarea class="form-control" id="comments" name="Comments" rows="3"></textarea>
+                            <label for="description" class="form-label" style="color: #333;">Please describe your needs - the more we know, the better! *</label>
+                            <textarea class="form-control" id="description" name="Description" rows="5" required></textarea>
                         </div>
                     </div>
-
+            
                     <!-- Submit and Reset Buttons -->
                     <div class="text-center">
-                        <button type="submit" class="btn btn-dark me-2">Submit</button>
-                        <button type="reset" class="btn btn-light">Clear</button>
+                        <button type="submit" class="btn" style="background-color: #333; color: white; border: none; padding: 10px 20px; border-radius: 5px;">Submit</button>
+                        <button type="reset" class="btn" style="background-color: white; color: #333; border: 1px solid #333; padding: 10px 20px; border-radius: 5px;">Clear</button>
                     </div>
                 </form>
             </div>
+            
         </div>
     </main>
 </section>
@@ -727,7 +734,9 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 <footer>
-    <p>&copy; Green Apple Web Studio</p>
+    <p>
+        &copy; Green Apple Web Studio 2023-2025. All Rights Reserved
+    </p>
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
