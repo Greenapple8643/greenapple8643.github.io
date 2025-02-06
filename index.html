@@ -631,103 +631,92 @@
         </div>
     </div>
 </section>
-<section id="contact" class="py-5">
-    <main class="d-flex flex-column justify-content-center align-items-center">
-        <div class="container mt-3">
-            <div class="form-container">
-                <h3 class="text-start" style="color: #333;">Contact Us Form</h3>
-                <p class="text-danger">Please fill out all required fields marked with an asterisk (*).</p>
-                <form action="https://formspree.io/f/mnnnojwk" method="POST">
+<section id="contact">
+    <h2 class="centered-heading">Contact Us</h2>
+    <div class="contact-container">
+        <p class="contact-description">Have a project in mind? Let's talk! Fill out the form below, and we’ll get back to you within 24 hours.</p>
+
+        <form action="https://formspree.io/f/mnnnojwk" method="POST" class="contact-form">
             
-                    <!-- First Row -->
-                    <div class="row mb-3">
-                        <div class="col-md-3">
-                            <label for="first-name" class="form-label" style="color: #333;">First Name *</label>
-                            <input type="text" class="form-control" id="first-name" name="First_Name" required>
-                        </div>
-                        <div class="col-md-3">
-                            <label for="second-name" class="form-label" style="color: #333;">Second Name *</label>
-                            <input type="text" class="form-control" id="second-name" name="Second_Name" required>
-                        </div>
-                        <div class="col-md-3">
-                            <label for="company" class="form-label" style="color: #333;">Company</label>
-                            <input type="text" class="form-control" id="company" name="Company">
-                        </div>
-                        <div class="col-md-3">
-                            <label for="city" class="form-label" style="color: #333;">City *</label>
-                            <input type="text" class="form-control" id="city" name="City" required>
-                        </div>
-                    </div>
-            
-                    <!-- Second Row -->
-                    <div class="row mb-3">
-                        <div class="col-md-3">
-                            <label for="country" class="form-label" style="color: #333;">Country *</label>
-                            <input type="text" class="form-control" id="country" name="Country" required>
-                        </div>
-                        <div class="col-md-3">
-                            <label for="phone" class="form-label" style="color: #333;">Phone *</label>
-                            <input type="tel" class="form-control" id="phone" name="Phone" required>
-                        </div>
-                        <div class="col-md-3">
-                            <label for="email" class="form-label" style="color: #333;">Email *</label>
-                            <input type="email" class="form-control" id="email" name="Email" required>
-                        </div>
-                        <div class="col-md-3">
-                            <label for="existing-url" class="form-label" style="color: #333;">Existing Website URL</label>
-                            <input type="url" class="form-control" id="existing-url" name="Existing_Website">
-                        </div>
-                    </div>
-            
-                    <!-- Third Row -->
-                    <div class="row mb-3">
-                        <div class="col-md-4">
-                            <label for="start" class="form-label" style="color: #333;">When would you like to start? *</label>
-                            <input type="date" class="form-control" id="start" name="Start_Date" required>
-                        </div>
-                        <div class="col-md-4">
-                            <label for="complete-date" class="form-label" style="color: #333;">Preferred Date to Complete *</label>
-                            <input type="date" class="form-control" id="complete-date" name="Preferred_Complete_Date" required>
-                        </div>
-                        <div class="col-md-4">
-                            <label for="messenger" class="form-label" style="color: #333;">Preferred Messenger *</label>
-                            <select class="form-select" id="messenger" name="Messenger" required>
-                                <option value="">Select</option>
-                                <option value="WhatsApp">WhatsApp</option>
-                                <option value="Telegram">Telegram</option>
-                                <option value="Skype">Skype</option>
-                                <option value="Zoom">Zoom</option>
-                                <option value="Other">Other</option>
-                            </select>
-                        </div>
-                    </div>
-            
-                    <!-- Fourth Row -->
-                    <div class="row mb-3">
-                        <div class="col-12">
-                            <label for="budget" class="form-label" style="color: #333;">What is your budget? *</label>
-                            <input type="text" class="form-control" id="budget" name="Budget" required>
-                        </div>
-                    </div>
-            
-                    <!-- Fifth Row -->
-                    <div class="row mb-3">
-                        <div class="col-12">
-                            <label for="description" class="form-label" style="color: #333;">Please describe your needs - the more we know, the better! *</label>
-                            <textarea class="form-control" id="description" name="Description" rows="5" required></textarea>
-                        </div>
-                    </div>
-            
-                    <!-- Submit and Reset Buttons -->
-                    <div class="text-center">
-                        <button type="submit" class="btn" style="background-color: #333; color: white; border: none; padding: 10px 20px; border-radius: 5px;">Submit</button>
-                        <button type="reset" class="btn" style="background-color: white; color: #333; border: 1px solid #333; padding: 10px 20px; border-radius: 5px;">Clear</button>
-                    </div>
-                </form>
+            <div class="form-group">
+                <label for="first-name">First Name *</label>
+                <input type="text" id="first-name" name="First_Name" required>
             </div>
-            
-        </div>
-    </main>
+
+            <div class="form-group">
+                <label for="second-name">Second Name *</label>
+                <input type="text" id="second-name" name="Second_Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="company">Company</label>
+                <input type="text" id="company" name="Company">
+            </div>
+
+            <div class="form-group">
+                <label for="city">City *</label>
+                <input type="text" id="city" name="City" required>
+            </div>
+
+            <div class="form-group">
+                <label for="country">Country *</label>
+                <input type="text" id="country" name="Country" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone *</label>
+                <input type="tel" id="phone" name="Phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="Email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="existing-url">Existing Website URL</label>
+                <input type="url" id="existing-url" name="Existing_Website">
+            </div>
+
+            <div class="form-group">
+                <label for="start">When would you like to start? *</label>
+                <input type="date" id="start" name="Start_Date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="complete-date">Preferred Date to Complete *</label>
+                <input type="date" id="complete-date" name="Preferred_Complete_Date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="messenger">Preferred Messenger *</label>
+                <select id="messenger" name="Messenger" required>
+                    <option value="">Select</option>
+                    <option value="WhatsApp">WhatsApp</option>
+                    <option value="Telegram">Telegram</option>
+                    <option value="Skype">Skype</option>
+                    <option value="Zoom">Zoom</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="budget">What is your budget? *</label>
+                <input type="text" id="budget" name="Budget" required>
+            </div>
+
+            <div class="form-group full-width">
+                <label for="description">Please describe your needs - the more we know, the better! *</label>
+                <textarea id="description" name="Description" rows="5" required></textarea>
+            </div>
+
+            <div class="contact-buttons">
+                <button type="submit" class="btn primary-btn">Submit</button>
+                <button type="reset" class="btn secondary-btn">Clear</button>
+            </div>
+
+        </form>
+    </div>
 </section>
 
 <!-- Bootstrap Scripts -->

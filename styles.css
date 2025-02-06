@@ -408,15 +408,98 @@ footer {
     scroll-margin-top: 80px; 
 }
 
-.form-container {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    width: 90%;
-    max-width: 1200px; /* Restrict the maximum width */
-    margin: 0 auto;
+#contact {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white; /* White background */
 }
+
+.contact-container {
+    max-width: 900px; /* Matches width of Projects & Skills sections */
+    margin: 0 auto;
+    padding: 30px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 2px solid #bad856; /* Accent color */
+}
+
+.contact-description {
+    font-size: 16px;
+    color: #333; /* Dark text */
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-group {
+    width: 48%;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #333; /* Dark text */
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #f8f8f8; /* Light input fields */
+}
+
+.full-width {
+    width: 100%;
+}
+
+.contact-buttons {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.primary-btn {
+    background-color: #bad856; /* Light green */
+    color: white;
+    border: none;
+    font-weight: 600;
+}
+
+.secondary-btn {
+    background-color: #333;
+    color: white; /* Dark text */
+    border: 2px solid #bad856;
+    font-weight: 600;
+}
+
+.secondary-btn:hover {
+    background-color: #bad856;
+    color: #333;
+}
+
 
 @media (max-width: 768px) {
 
