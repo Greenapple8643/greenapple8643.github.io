@@ -139,46 +139,72 @@ section {
     padding-right: 15%;
 }
 
-.centered-heading {
-    text-align: center;
-    margin-bottom: 1.5rem;
-}
-
 .about {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    margin: 0 6rem;
-    margin-top: 10rem;
-    margin-bottom: 6rem;
-}
-
-
-.about h2 {
     text-align: center;
-    margin-left: -15%;
-    width: 100%; /* Ensures the text takes up the full width of the container */
-    margin-bottom: 1.5rem;
+    margin: 6rem auto;
+    max-width: 80%;
 }
 
-
-#about {
-    scroll-padding-top: 80px; /* Adjust this value to match the height of your header */
+.centered-heading {
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2.5rem;
 }
 
+.team-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    width: 100%;
+}
 
-.about img {
-    width: 400px;
-    height: 400px;
+.team-member {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    gap: 2rem;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-member:hover {
+    transform: scale(1.02);
+}
+
+.team-member img {
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
-    margin-right: 2rem;
+    object-fit: cover;
 }
 
+.team-description {
+    max-width: 600px;
+    text-align: left;
+}
 
-.about p {
-    max-width: 90%;
-    margin-right: 10%;
+.team-description h3 {
     font-size: 2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
 }
+
+.team-description p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+
 
 .projects {
     display: grid;
@@ -574,29 +600,29 @@ footer {
     }
 
     /* Adjust About section */
+    
     .about {
-        flex-direction: column;
-        margin: 3rem 1rem;
-        text-align: center;
-    }
-
-    #about {
         padding-top: 1rem;
-        margin-top: 100px; /* Ensure the About section starts lower */
+        margin-top: 100px;
     }
 
-    .about img {
-        width: 70%; /* Full-width on mobile */
-        height: auto;
-        border-radius: 50%; /* Remove the round border radius on mobile */
+    .team-container {
+        width: 100%;
     }
 
-    .about p {
-        font-size: 1.6rem;
-    }
-
-    .about h2 {
+    .team-member {
+        flex-direction: column;
         text-align: center;
+        width: 150%;
+    }
+
+    .team-member h3 {
+        font-size: 1.8rem;
+    }
+
+    .team-member img {
+        width: 120px;
+        height: 120px;
     }
 
     /* Projects section adjustments */
@@ -661,30 +687,3 @@ footer {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

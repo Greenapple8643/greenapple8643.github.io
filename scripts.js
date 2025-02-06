@@ -84,15 +84,3 @@ document.querySelectorAll('.skill').forEach(skill => {
         }
     });
 });
-
-
-
-
-
-
-
-
-
-
-
-
