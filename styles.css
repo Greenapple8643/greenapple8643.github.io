@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     color: #333;
     padding-top: 70px;
     padding-bottom: 70px;
@@ -51,7 +51,7 @@ nav {
 
 nav a {
     font-size: 2.5rem;
-    color: white;
+    color: #ffffff;
     margin-right: 20px;
     text-decoration: none;
     font-weight: 500;
@@ -94,7 +94,7 @@ nav a:hover {
 
 .intro-text h1 {
     font-size: 3.5rem;
-    color: white;
+    color: #ffffff;
     opacity: 0; /* Initially hidden */
     transform: none; /* Remove the transform effect */
     display: table;
@@ -202,7 +202,7 @@ section {
 .team-description p {
     font-size: 1.5rem;
     line-height: 1.6;
-    color: #666;
+    color: #333;
 }
 
 
@@ -220,7 +220,7 @@ section {
 }
 
 .project-card {
-    background-color: white;
+    background-color: #ffffff;
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -312,8 +312,8 @@ section {
     top: 20px; /* Positioning the close button within the lightbox */
     right: 20px;
     font-size: 2.5rem; /* Increase size for better visibility */
-    color: black;
-    background-color: white;
+    color: #333;
+    background-color: #ffffff;
     cursor: pointer;
     padding: 5px 10px; /* Add some padding for a button-like appearance */
     border-radius: 5px; /* Rounded corners */
@@ -321,8 +321,8 @@ section {
 }
 
 .close:hover {
-    background: white;
-    color: black; 
+    background: #ffffff;
+    color: #333; 
 }
 
 
@@ -331,7 +331,7 @@ section {
     top: 50%;
     transform: translateY(-50%);
     font-size: 30px;
-    color: white;
+    color: #ffffff;
     cursor: pointer;
     background: none;
     border: none;
@@ -352,7 +352,7 @@ section {
 
 footer {
     background-color: #333;
-    color: white;
+    color: #ffffff;
     text-align: center;
     padding: 2rem 0;
     position: fixed;
@@ -438,17 +438,17 @@ footer {
 #contact {
     text-align: center;
     padding: 50px 20px;
-    background-color: white; /* White background */
+    background-color: #ffffff; /* White background */
 }
 
 .contact-container {
     max-width: 900px; /* Matches width of Projects & Skills sections */
     margin: 0 auto;
     padding: 30px;
-    background: white;
+    background: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    border: 2px solid #bad856; /* Accent color */
+    border: 1px solid #333; /* Accent color */
 }
 
 .contact-description {
@@ -483,10 +483,10 @@ footer {
 .form-group textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #333;
     border-radius: 5px;
     font-size: 14px;
-    background-color: #f8f8f8; /* Light input fields */
+    background-color: #ffffff; /* Light input fields */
 }
 
 .full-width {
@@ -510,14 +510,14 @@ footer {
 
 .primary-btn {
     background-color: #bad856; /* Light green */
-    color: white;
+    color: #ffffff;
     border: none;
     font-weight: 600;
 }
 
 .secondary-btn {
     background-color: #333;
-    color: white; /* Dark text */
+    color: #ffffff; /* Dark text */
     border: 2px solid #bad856;
     font-weight: 600;
 }
@@ -567,7 +567,7 @@ footer {
         cursor: pointer;
         font-size: 3rem;
         margin: 1rem;
-        color: white;
+        color: #ffffff;
     }
 
     /* Adjust main hero section to cover full screen */
@@ -596,7 +596,7 @@ footer {
 
     .intro-text h1 {
         font-size: 1.8rem; /* Smaller text size for mobile */
-        color: white;
+        color: #ffffff;
         margin: 0.5rem;
     }
 
@@ -682,7 +682,7 @@ footer {
         top: 1rem; /* Position it at the top */
         right: 1rem; /* Position it on the right */
         font-size: 2rem;
-        color: white;
+        color: #ffffff;
         cursor: pointer;
         z-index: 10000; /* Make sure it stays above everything */
     }
