@@ -9,6 +9,14 @@
     display: none;
 }
 
+html, body {
+    height: 100%;
+}
+
+.main-content {
+    flex: 1; /* Takes up remaining space */
+}
+
 body {
     background-color: #ffffff;
     color: #333;
@@ -50,12 +58,16 @@ nav {
 }
 
 nav a {
-    font-size: 2.5rem;
+    font-size: 1.8rem; /* Reduce font size for better proportion */
     color: #ffffff;
-    margin-right: 20px;
+    margin: 0 15px; /* Adjust margin for spacing */
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s, transform 0.3s; /* Smooth transition for both color and movement */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    padding: 10px 12px; /* Adds padding for better clickability */
+    display: flex;
+    align-items: center; /* Ensure links are centered vertically */
+    height: 100%; /* Fill the height of the navbar */
 }
 
 nav a:hover {
@@ -88,49 +100,93 @@ nav a:hover {
     justify-content: center;
     align-items: flex-start; /* Align items to the left */
     height: 100%;
-    padding-left: 5%; /* Add padding to create space from the left edge */
+    padding-left: 10%; /* Add padding to create space from the left edge */
     text-align: left; /* Ensure the text inside is left-aligned */
 }
 
+@keyframes movingText {
+    0% {
+        background-position: 100%;
+    }
+    100% {
+        background-position: 0%;
+    }
+}
+
 .intro-text h1 {
-    font-size: 3.5rem;
-    color: #ffffff;
-    opacity: 0; /* Initially hidden */
-    transform: none; /* Remove the transform effect */
-    display: table;
-    padding: 10px;
-    background-color: rgba(186, 216, 86, 0.3);
-    border-radius: 15px;
-    box-shadow: 5px 5px 8px rgba(53, 53, 53, 0.5);
-    text-align: left; /* Ensure text within each h2 is left-aligned */
+    font-size: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: 1;
+    padding: 15px 30px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 20px;
+    text-align: center;
+
+    /* Gradient Animation */
+    background: linear-gradient(90deg, #333, #bad856, #ffffff);
+    background-size: 300%;
+    background-position: 100%;
+    
+    /* Ensure proper rendering */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+    /* Animation */
+    animation: movingText 3s linear infinite alternate;
 }
 
 
+.intro-text ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 20px 0 0 10px;
+}
 
+.intro-text li {
+    font-size: 1.8rem;
+    color: white;
+    opacity: 0;
+    background-color: rgba(51, 51, 51, 0.7);
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.intro-text li::before {
+    content: "•"; /* Unicode bullet */
+    color: #bad856; /* Green Apple Theme */
+    font-size: 2rem;
+    font-weight: bold;
+    margin-right: 10px;
+}
 
 @keyframes fadeIn {
     0% {
         opacity: 0;
+        transform: translateY(10px);
     }
     100% {
         opacity: 1;
+        transform: translateY(0);
     }
 }
 
-.line-1 {
-    animation: fadeIn 1s ease-out forwards;
-    animation-delay: 0.5s; /* Delay for the first line */
-}
+.intro-text li:nth-child(1) { animation-delay: 0.5s; }
+.intro-text li:nth-child(2) { animation-delay: 1s; }
+.intro-text li:nth-child(3) { animation-delay: 1.5s; }
+.intro-text li:nth-child(4) { animation-delay: 2s; }
+.intro-text li:nth-child(5) { animation-delay: 2.5s; }
+.intro-text li:nth-child(6) { animation-delay: 3s; }
 
-.line-2 {
-    animation: fadeIn 1s ease-out forwards;
-    animation-delay: 1.5s; /* Delay for the second line */
-}
-
-.line-3 {
-    animation: fadeIn 1s ease-out forwards;
-    animation-delay: 2.5s; /* Delay for the third line */
-}
 
 section {
     padding: 4rem 2rem;
@@ -350,17 +406,15 @@ section {
     overflow-x: hidden;
 }
 
+
 footer {
     background-color: #333;
     color: #ffffff;
     text-align: center;
     padding: 2rem 0;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    width: calc(100%);
+    position: relative; /* Change from fixed to relative */
+    width: 100%;
+    margin-top: auto; /* Ensures it moves to the bottom when content is short */
 }
 
 .skills {
@@ -590,12 +644,13 @@ footer {
     }
 
     .intro-text {
-        padding-top: 15rem; /* Adjust this value to push the text down */
+        padding-top: -5rem; /* Adjust this value to push the text down */
         padding-right: 5rem;
+        max-width: 100%;
     }
 
     .intro-text h1 {
-        font-size: 1.8rem; /* Smaller text size for mobile */
+        font-size: 2.8rem; /* Smaller text size for mobile */
         color: #ffffff;
         margin: 0.5rem;
     }
