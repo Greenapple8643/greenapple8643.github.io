@@ -117,7 +117,14 @@ nav a:hover {
     height: 100%;
     padding-left: 10%; /* Add padding to create space from the left edge */
     text-align: left; /* Ensure the text inside is left-aligned */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
+
+.hero.loaded .intro-text {
+    opacity: 1;
+}
+
 
 @keyframes movingText {
     0% {

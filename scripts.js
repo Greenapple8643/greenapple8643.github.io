@@ -84,3 +84,14 @@ document.querySelectorAll('.skill').forEach(skill => {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const hero = document.querySelector(".hero");
+    
+    // Preload the background image
+    const bgImage = new Image();
+    bgImage.src = "Jaguar.jpg";
+    bgImage.onload = function () {
+        hero.classList.add("loaded"); // Adds class when image is ready
+    };
+});
