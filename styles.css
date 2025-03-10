@@ -657,7 +657,18 @@ footer {
         align-items: center;
     }
 
+    @keyframes spinApple {
+        0% {
+            transform: rotateY(0deg);
+        }
+        100% {
+            transform: rotateY(360deg);
+        }
+    }
+    
     #apple-image {
+        animation: spinApple 3s linear infinite;
+        transform-style: preserve-3d; /* Ensures the 3D effect */
         position: absolute;
         top: 15px;
         right: 10px; /* Move to the right for mobile screens */
