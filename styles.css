@@ -209,6 +209,18 @@ nav a:hover {
 .intro-text li:nth-child(5) { animation-delay: 2.5s; }
 .intro-text li:nth-child(6) { animation-delay: 3s; }
 
+/* Hover Effect */
+.intro-text li:hover {
+    background-color: rgba(186, 216, 86, 0.5); /* Light green background */
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 4px 4px 10px rgba(186, 216, 86, 0.5); /* Soft green glow */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Optional: Change bullet color on hover */
+.intro-text li:hover::before {
+    color: #ffffff; /* Change bullet color to white */
+}
 
 section {
     padding: 4rem 2rem;
